@@ -1,3 +1,6 @@
+'use client';
+
+import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -33,9 +36,11 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <img
-              src="/lovable-uploads/18308840-e4d1-44a9-9087-dc72d337f14c.png"
+            <Image
+              src="/laika-bot.png"
               alt="Laika Bot"
+              width={32}
+              height={32}
               className="h-8 w-8 pulse-glow rounded-full"
             />
             <span className="text-xl font-space font-bold text-gradient-primary">

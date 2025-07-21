@@ -1,4 +1,7 @@
+'use client';
+
 import { Github, Twitter, Youtube, Mail } from 'lucide-react';
+import Image from 'next/image';
 
 const Footer = () => {
   const socialLinks = [
@@ -20,9 +23,11 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           {/* Logo and Branding */}
           <div className="flex items-center space-x-3 mb-6 md:mb-0">
-            <img
-              src="/lovable-uploads/18308840-e4d1-44a9-9087-dc72d337f14c.png"
+            <Image
+              src="/laika-bot.png"
               alt="Laika Bot"
+              width={32}
+              height={32}
               className="h-8 w-8 rounded-full opacity-80"
             />
             <div>

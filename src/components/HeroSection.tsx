@@ -1,5 +1,8 @@
+'use client';
+
 import { Play, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import Image from 'next/image';
 
 const HeroSection = () => {
   return (
@@ -51,9 +54,11 @@ const HeroSection = () => {
 
         {/* Logo with subtle glow */}
         <div className="mb-12 flex justify-center">
-          <img 
-            src="/lovable-uploads/18308840-e4d1-44a9-9087-dc72d337f14c.png" 
+          <Image 
+            src="/laika-bot.png" 
             alt="Laika Bot"
+            width={96}
+            height={96}
             className="w-24 h-24 object-contain opacity-80 hover:opacity-100 transition-opacity"
           />
         </div>

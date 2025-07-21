@@ -1,3 +1,5 @@
+'use client';
+
 import { Video, BookOpen, Users } from 'lucide-react';
 
 const FeatureGrid = () => {
