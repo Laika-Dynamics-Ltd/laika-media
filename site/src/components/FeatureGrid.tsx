@@ -10,11 +10,7 @@ export default function FeatureGrid() {
       ),
       title: "High Quality Content",
       description: "Professional-grade video production with cutting-edge technology and creative storytelling that captivates audiences and delivers exceptional viewing experiences.",
-      gradientFrom: "primary-50",
-      gradientTo: "primary-100",
-      borderColor: "primary-200",
-      iconBgColor: "bg-primary-600",
-      iconColor: "text-white",
+      variant: 'primary' as const,
       delay: 0
     },
     {
@@ -25,11 +21,7 @@ export default function FeatureGrid() {
       ),
       title: "Educational Value",
       description: "Content designed to educate and inspire, covering topics that matter to our community and drive meaningful conversations that spark learning and growth.",
-      gradientFrom: "secondary-50",
-      gradientTo: "secondary-100",
-      borderColor: "secondary-200",
-      iconBgColor: "bg-secondary-600",
-      iconColor: "text-white",
+      variant: 'secondary' as const,
       delay: 200
     },
     {
@@ -40,11 +32,7 @@ export default function FeatureGrid() {
       ),
       title: "Community Focus",
       description: "Building a vibrant community around shared interests and meaningful conversations that bring people together and foster lasting connections.",
-      gradientFrom: "accent-50",
-      gradientTo: "accent-100",
-      borderColor: "accent-200",
-      iconBgColor: "bg-accent-600",
-      iconColor: "text-white",
+      variant: 'accent' as const,
       delay: 400
     }
   ];
@@ -68,11 +56,7 @@ export default function FeatureGrid() {
               icon={feature.icon}
               title={feature.title}
               description={feature.description}
-              gradientFrom={feature.gradientFrom}
-              gradientTo={feature.gradientTo}
-              borderColor={feature.borderColor}
-              iconBgColor={feature.iconBgColor}
-              iconColor={feature.iconColor}
+              variant={feature.variant}
               delay={feature.delay}
             />
           ))}

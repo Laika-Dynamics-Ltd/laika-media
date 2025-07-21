@@ -6,24 +6,18 @@ export default function Hero() {
       {/* Animated Background Elements */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-0 left-0 w-96 h-96 bg-primary-400 rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div>
-        <div className="absolute top-0 right-0 w-96 h-96 bg-secondary-400 rounded-full mix-blend-multiply filter blur-xl animate-pulse animation-delay-2000"></div>
-        <div className="absolute bottom-0 left-1/2 w-96 h-96 bg-accent-400 rounded-full mix-blend-multiply filter blur-xl animate-pulse animation-delay-4000"></div>
+        <div className="absolute top-0 right-0 w-96 h-96 bg-secondary-400 rounded-full mix-blend-multiply filter blur-xl animate-pulse" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute bottom-0 left-1/2 w-96 h-96 bg-accent-400 rounded-full mix-blend-multiply filter blur-xl animate-pulse" style={{ animationDelay: '4s' }}></div>
       </div>
 
       {/* Floating Particles */}
       <div className="absolute inset-0 overflow-hidden">
-        {[...Array(6)].map((_, i) => (
-          <div
-            key={i}
-            className="absolute w-2 h-2 bg-primary-300 rounded-full animate-float"
-            style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              animationDelay: `${Math.random() * 3}s`,
-              animationDuration: `${3 + Math.random() * 2}s`
-            }}
-          />
-        ))}
+        <div className="absolute w-2 h-2 bg-primary-300 rounded-full animate-float" style={{ left: '10%', top: '20%', animationDelay: '0s', animationDuration: '3s' }} />
+        <div className="absolute w-2 h-2 bg-secondary-300 rounded-full animate-float" style={{ left: '80%', top: '30%', animationDelay: '1s', animationDuration: '4s' }} />
+        <div className="absolute w-2 h-2 bg-accent-300 rounded-full animate-float" style={{ left: '60%', top: '70%', animationDelay: '2s', animationDuration: '3.5s' }} />
+        <div className="absolute w-2 h-2 bg-primary-300 rounded-full animate-float" style={{ left: '20%', top: '80%', animationDelay: '0.5s', animationDuration: '4.5s' }} />
+        <div className="absolute w-2 h-2 bg-secondary-300 rounded-full animate-float" style={{ left: '90%', top: '60%', animationDelay: '1.5s', animationDuration: '3s' }} />
+        <div className="absolute w-2 h-2 bg-accent-300 rounded-full animate-float" style={{ left: '40%', top: '10%', animationDelay: '2.5s', animationDuration: '4s' }} />
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
