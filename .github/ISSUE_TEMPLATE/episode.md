@@ -6,64 +6,34 @@ labels: ["episode", "content"]
 assignees: ""
 ---
 
-## Episode Details
+## Outline
+- **Topic**:
+- **Script link**:
+- **Status**: `idea` / `pre-prod` / `prod` / `uploaded` / `retro`
 
-### Title
-<!-- What's the working title for this episode? -->
+## Checklist
+- [ ] Script approved
+- [ ] VO recorded
+- [ ] Edit complete
+- [ ] Thumbnail
+- [ ] Captions
+- [ ] Uploaded
 
-### Description
-<!-- Brief description of what this episode will cover -->
+## Additional Details
 
-### Target Audience
-<!-- Who is this episode for? -->
-
-### Estimated Duration
-<!-- How long do you expect this episode to be? -->
-
-## Content Planning
-
-### Key Topics
-- [ ] Topic 1
-- [ ] Topic 2
-- [ ] Topic 3
-
-### Required Assets
-- [ ] Script
-- [ ] Graphics/Visuals
-- [ ] Music/Sound effects
-- [ ] Guest interviews (if applicable)
+### Episode Information
+- **Title**: 
+- **Description**: 
+- **Target Duration**: 
+- **Target Audience**: 
 
 ### Production Notes
 <!-- Any special requirements, equipment needed, or production considerations -->
 
-## Timeline
-
-### Pre-Production
-- [ ] Script writing
-- [ ] Asset creation
-- [ ] Location scouting (if needed)
-- [ ] Equipment setup
-
-### Production
-- [ ] Recording
-- [ ] B-roll footage
-- [ ] Interviews (if applicable)
-
-### Post-Production
-- [ ] Video editing
-- [ ] Audio mixing
-- [ ] Color grading
-- [ ] Graphics/effects
-- [ ] Final review
-
-### Publishing
-- [ ] Upload to platform(s)
-- [ ] SEO optimization
-- [ ] Social media promotion
-- [ ] Community engagement
-
-## Additional Notes
-<!-- Any other relevant information -->
+### Links & Resources
+- **Script**: 
+- **Assets**: 
+- **References**: 
 
 ---
 
