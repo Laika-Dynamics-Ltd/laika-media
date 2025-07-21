@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   title: "Laika Media",
   description: "Professional video production and media content",
   icons: {
-    icon: '/laika-bot.svg',
+    icon: '/laika-bot-logo.svg',
   },
 };
 

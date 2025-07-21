@@ -6,6 +6,7 @@ import { useState, useEffect } from 'react';
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [imageError, setImageError] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -31,14 +32,31 @@ export default function Header() {
           {/* Enhanced Logo */}
           <div className="flex items-center space-x-3 group">
             <div className="relative">
-              <Image
-                src="/laika-bot.svg"
-                alt="Laika Bot"
-                width={48}
-                height={48}
-                className="w-12 h-12 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-12"
-                priority
-              />
+              {!imageError ? (
+                <Image
+                  src="/laika-bot-logo.svg"
+                  alt="Laika Bot"
+                  width={48}
+                  height={48}
+                  className="w-12 h-12 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-12"
+                  priority
+                  onError={() => {
+                    console.error('Failed to load laika-bot-logo.svg');
+                    setImageError(true);
+                  }}
+                  onLoad={() => {
+                    console.log('Successfully loaded laika-bot-logo.svg');
+                  }}
+                />
+              ) : (
+                <img
+                  src="/laika-bot-logo.svg"
+                  alt="Laika Bot"
+                  className="w-12 h-12 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-12"
+                  onError={() => console.error('Fallback img also failed to load')}
+                  onLoad={() => console.log('Fallback img loaded successfully')}
+                />
+              )}
               {/* Subtle glow effect */}
               <div className="absolute inset-0 w-12 h-12 bg-primary-400 rounded-full blur-md opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
             </div>

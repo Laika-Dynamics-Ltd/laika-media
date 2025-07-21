@@ -6,6 +6,7 @@ import Hero from '@/components/Hero';
 import FeatureGrid from '@/components/FeatureGrid';
 import Footer from '@/components/Footer';
 import VideoModal from '@/components/VideoModal';
+import ColorTest from '@/components/ColorTest';
 
 export default function Home() {
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
@@ -55,6 +56,9 @@ export default function Home() {
         title="Claude Code 100-s Demo"
         description="Experience the power of AI-assisted coding with our latest demonstration."
       />
+      
+      {/* Debug Color Test */}
+      <ColorTest />
     </div>
   );
 }

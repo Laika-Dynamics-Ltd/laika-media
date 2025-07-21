@@ -27,7 +27,7 @@ export default function Hero() {
             <div className="mb-8 relative">
               <div className="relative inline-block">
                 <Image
-                  src="/laika-bot.svg"
+                  src="/laika-bot-logo.svg"
                   alt="Laika Bot"
                   width={160}
                   height={160}

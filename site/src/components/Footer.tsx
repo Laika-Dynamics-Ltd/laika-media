@@ -9,7 +9,7 @@ export default function Footer() {
           <div className="md:col-span-2">
             <div className="flex items-center space-x-3 mb-4">
               <Image
-                src="/laika-bot.svg"
+                src="/laika-bot-logo.svg"
                 alt="Laika Bot"
                 width={40}
                 height={40}
