@@ -46,11 +46,16 @@ const config: Config = {
           800: '#9a3412',
           900: '#7c2d12',
         },
+        // Video asset colors
+        surface1: '#121212',
+        'text-primary': '#ffffff',
+        'text-muted': '#a1a1aa',
       },
       fontFamily: {
         sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
         display: ['var(--font-poppins)', 'system-ui', 'sans-serif'],
         mono: ['var(--font-jetbrains-mono)', 'monospace'],
+        heading: ['Space Grotesk', 'system-ui', 'sans-serif'],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -72,6 +77,19 @@ const config: Config = {
   plugins: [
     require('@tailwindcss/typography'),
     require('@tailwindcss/forms'),
+    function({ addComponents }: { addComponents: any }) {
+      addComponents({
+        '.diff-add': { 
+          '@apply bg-green-900/60 text-green-100': {} 
+        },
+        '.diff-del': { 
+          '@apply bg-red-900/60 text-red-100': {} 
+        },
+        '.diff-ctx': { 
+          '@apply bg-surface1 text-text-muted': {} 
+        },
+      });
+    },
   ],
 };
 
