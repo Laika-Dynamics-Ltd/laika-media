@@ -123,7 +123,7 @@ index abc1234..def5678 100644
             <div>
               <h4 className="font-semibold text-primary-400 mb-2">Lower Third</h4>
               <ul className="space-y-1 text-gray-300">
-                <li>• Import: <code className="bg-gray-700 px-1 rounded">import {`{ LowerThird }`} from '@/components/LowerThird'</code></li>
+                <li>• Import: <code className="bg-gray-700 px-1 rounded">import {`{ LowerThird }`} from &apos;@/components/LowerThird&apos;</code></li>
                 <li>• Use: <code className="bg-gray-700 px-1 rounded">{`<LowerThird title="Title" subtitle="Subtitle" />`}</code></li>
                 <li>• Animation: Slides in from left over 0.4s</li>
                 <li>• Export: Use browser dev tools to capture</li>
@@ -132,7 +132,7 @@ index abc1234..def5678 100644
             <div>
               <h4 className="font-semibold text-secondary-400 mb-2">Diff Overlay</h4>
               <ul className="space-y-1 text-gray-300">
-                <li>• Import: <code className="bg-gray-700 px-1 rounded">import {`{ DiffOverlay }`} from '@/components/DiffOverlay'</code></li>
+                <li>• Import: <code className="bg-gray-700 px-1 rounded">import {`{ DiffOverlay }`} from &apos;@/components/DiffOverlay&apos;</code></li>
                 <li>• Use: <code className="bg-gray-700 px-1 rounded">{`<DiffOverlay code={gitDiff} title="Optional Title" />`}</code></li>
                 <li>• Animation: Fades in with slight upward motion</li>
                 <li>• Colors: Green for additions, red for deletions</li>

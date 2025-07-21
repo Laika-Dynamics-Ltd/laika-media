@@ -1,12 +1,10 @@
 'use client';
 
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import diff from 'react-syntax-highlighter/dist/esm/languages/prism/diff';
-import { vs2015 } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import { tomorrow } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import { motion } from 'framer-motion';
 
-// Register the diff language
-SyntaxHighlighter.registerLanguage('diff', diff);
+// Diff language is supported by default in newer versions
 
 interface DiffOverlayProps {
   code: string;
@@ -28,7 +26,7 @@ export function DiffOverlay({ code, title }: DiffOverlayProps) {
       )}
       <SyntaxHighlighter
         language="diff"
-        style={vs2015}
+        style={tomorrow}
         customStyle={{ 
           background: 'transparent', 
           padding: '1rem',
@@ -38,8 +36,9 @@ export function DiffOverlay({ code, title }: DiffOverlayProps) {
           fontFamily: 'JetBrains Mono, monospace'
         }}
         wrapLines
-        lineProps={(line) => {
-          const lineContent = line.children?.[0]?.value || '';
+        lineProps={(lineNumber: number) => {
+          const lines = code.split('\n');
+          const lineContent = lines[lineNumber - 1] || '';
           if (lineContent.startsWith('+')) {
             return { 
               className: 'diff-add',
